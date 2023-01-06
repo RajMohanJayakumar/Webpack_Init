@@ -1,9 +1,6 @@
-<html>
-    <head>
-        <title>Webpack</title>
-    </head>
-    <body>
-        <h3>Hey, Hi!</h3>
-        <button>Click me</button>
-    </body>
-</html>
+import _ from 'lodash';
+console.log("Inside Bundle");
+
+document.getElementById('click-me').addEventListener('click', function printInConsole() {
+    console.log("10", _.chunk(['a', 'b', 'c', 'd'], 2))
+})
